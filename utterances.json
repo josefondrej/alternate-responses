@@ -1,0 +1,32 @@
+{
+  "disambiguation": [
+    "leave",
+    "time",
+    "show status",
+    "what",
+    "manager",
+    "workday",
+    "terminate",
+    "see employees",
+    "employee",
+    "check employee",
+    "find code",
+    "who is my boss in bluepages",
+    "jobs",
+    "show history",
+    "history",
+    "tell me"
+  ],
+  "no_disambiguation": [
+    "request leave",
+    "request time off",
+    "who is my manager",
+    "change job title",
+    "show my work history",
+    "help",
+    "tell me a joke",
+    "what is workday",
+    "workday on mobile",
+    "workday deployments"
+  ]
+}
