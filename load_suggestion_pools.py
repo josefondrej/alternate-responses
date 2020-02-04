@@ -20,7 +20,7 @@ def get_utterance_to_suggestion_pool(data_path: str):
 
 
 if __name__ == "__main__":
-    data_path = "utterance_to_intents.json"
+    data_path = "utterances/workday.json"
 
     utterance_to_suggestion_pool = get_utterance_to_suggestion_pool(data_path)
     print(utterance_to_suggestion_pool["leave"].scores)

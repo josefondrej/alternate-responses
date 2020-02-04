@@ -1,5 +1,5 @@
 {
-  "disambiguation": [
+  "utterances": [
     "leave",
     "time",
     "show status",
@@ -15,9 +15,7 @@
     "jobs",
     "show history",
     "history",
-    "tell me"
-  ],
-  "no_disambiguation": [
+    "tell me",
     "request leave",
     "request time off",
     "who is my manager",

@@ -45,6 +45,8 @@ def barplot_dict(title: str, dictionary: Dict, color: str = "deepskyblue"):
     plt.title(title)
     plt.bar(x, values, align='center', color=color)
     plt.xticks(x, keys, rotation=90)
+    fig_name = title.replace(" ", "_").lower() + ".png"
+    plt.savefig(f"./plots/{fig_name}", bbox_inches='tight')
     plt.show()
 
 
@@ -95,10 +97,10 @@ def plot_response_statistics(utterance_to_responses: Dict[str, List[AssistantRes
 
 
 if __name__ == "__main__":
-    data_path = "utterance_to_intents.json"
+    data_path = "workday.json"
 
     utterance_to_suggestion_pool = get_utterance_to_suggestion_pool(data_path)
 
-    utterance_to_responses = sample_responses(utterance_to_suggestion_pool, 100)
+    utterance_to_responses = sample_responses(utterance_to_suggestion_pool, 1000)
 
     plot_response_statistics(utterance_to_responses)
